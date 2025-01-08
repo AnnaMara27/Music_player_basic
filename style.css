@@ -1,11 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  background-color: #c2c2c2;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: #222;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,4 +18,129 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+}
+
+.container {
+  background-color: #efefef;
+  border-radius: 20px;
+  box-shadow: 0 15px 20px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 500px;
+  width: 400px;
+  max-width: 95%;
+  padding: 20px;
+}
+
+.art-container {
+  height: 150px;
+  width: 150px;
+}
+
+.album-art {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.music-info {
+  border-top: 1px solid #c2c2c2;
+  border-bottom: 1px solid #c2c2c2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+  width: 80%;
+}
+
+.song-title {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.song-artist {
+  font-size: 18px;
+  font-weight: 100;
+  color: #000;
+  color: #9d0909;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.action-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.fas {
+  font-size: 28px;
+  color: #303030;
+}
+
+.action-btn-big {
+  height: 50px;
+  width: 50px;
+}
+
+.action-btn-big .fas {
+  color: #9d0909;
+  font-size: 45px;
+}
+
+.action-btn:hover {
+  transform: scale(1.1);
+}
+
+.duration-container {
+  padding: 20px 0;
+  width: 80%;
+}
+
+.duration {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 100;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.progress-container {
+  background-color: #fff;
+  border: 1px solid #c2c2c2;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 5px;
+  width: 100%;
+}
+
+.progress {
+  background-color: #9d0909;
+  border-radius: 5px;
+  height: 100%;
+  width: 66%;
+  transition: width 0.1s linear;
+}
+
+@media (max-width: 560px) {
+  .container {
+    width: 90%;
+  }
+
+  .song-title {
+    font-size: 22px;
+  }
 }
